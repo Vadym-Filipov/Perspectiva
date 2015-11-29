@@ -1,0 +1,244 @@
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  width: 100%;
+}
+
+.wrapper {
+  display: block;
+  width: 980px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  height: 30px;
+}
+
+header .wrapper {
+  height: 100%;
+}
+
+header .wrapper .header-info {
+  height: 100%;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+header .wrapper .header-info .custom_phone {
+  float: left;
+  height: 100%;
+}
+
+header .wrapper .header-info .my_info {
+  float: right;
+  height: 100%;
+}
+
+.my_ak {
+  float: left;
+  border-left: 2px #444444 solid;
+  border-right: 2px #444444 solid;
+  padding: 0 10px 0 25px;
+  height: 100%;
+  background: url("../img/ak.png") no-repeat 5px center;
+}
+
+.my_cash {
+  float: right;
+  display: block;
+  border-right: 2px #444444 solid;
+  padding: 0 10px;
+  height: 100%;
+}
+
+.logo {
+  float: left;
+  margin-top: 40px;
+}
+
+.head-logo_menu .wrapper {
+  height: 110px;
+}
+
+.is-active li {
+  display: block;
+}
+
+nav {
+  float: right;
+  margin: 40px 25px 0 0;
+}
+
+nav ul {
+  display: block;
+  float: left;
+  padding: 0 15px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.2s linear 0s;
+}
+
+nav ul:hover {
+  background-color: #ffa687;
+  color: #fff;
+}
+
+nav #products {
+  padding: 0 20px 0 15px;
+}
+
+nav #products:hover:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 15.5px;
+  border-bottom: 6px #fff solid;
+  border-left: 4.5px transparent solid;
+  border-right: 4.5px transparent solid;
+}
+
+nav #products li {
+  display: none;
+}
+
+.bin {
+  float: right;
+  width: 215px;
+  border: 1px #c2c2c2 solid;
+  color: #c2c2c2;
+  margin-top: 25px;
+}
+
+.bin select.customer_card {
+  display: block;
+  height: 30px;
+  width: 100%;
+  appearance: none;
+  border: none;
+  padding: 0 10px;
+}
+
+.bin .customer_check {
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  border-top: 1px #c2c2c2 solid;
+  padding: 0 10px;
+  background: url("../img/bin.png") no-repeat 10px center;
+}
+
+.bin .customer_check .customer_check-quantity {
+  display: inline;
+}
+
+.bin .customer_check .customer_check-summ {
+  display: inline;
+  border-left: 1px #c2c2c2 solid;
+  padding-left: 5px;
+}
+
+.wrapper-all {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.slider {
+  height: 440px;
+  width: 100%;
+  position: relative;
+  transition: 500ms;
+  background-image: url("../img/main_slider/slide1.jpg");
+}
+
+.leftbutt {
+  position: absolute;
+  left: 0px;
+  height: 115px;
+  width: 25px;
+  top: 40%;
+  border: none;
+  background: url("../img/main_slider/leftbut.jpg") center no-repeat #ffffff;
+}
+
+.rightbutt {
+  position: absolute;
+  right: 0px;
+  height: 115px;
+  width: 25px;
+  top: 40%;
+  border: none;
+  background: url("../img/main_slider/rightbut.jpg") center no-repeat #ffffff;
+}
+
+.div2 {
+  width: 1200px;
+  height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 105%;
+}
+
+.div2 ul {
+  margin: 0 auto;
+}
+
+.div2 li.showslidepos {
+  margin: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #867a76;
+}
+
+.slider_main-text {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 340px;
+  text-align: center;
+}
+
+.slider_main-text .main-text_crazy {
+  font-size: 36pt;
+}
+
+.slider_main-text .main-text_collection {
+  font-size: 36pt;
+  border-top: 2px #444444 solid;
+}
+
+.slider_main-text .btn-slider_main {
+  display: inline-block;
+  padding: 20px 25px;
+  color: #fff;
+  font-size: 16pt;
+  border-bottom: 3px #dd6b44 solid;
+  background: #fd926d;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.slider_main-text .btn-slider_main:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  border-bottom: 4.5px transparent solid;
+  border-left: 6px #fff solid;
+  border-top: 4.5px transparent solid;
+  transform: translateY(-50%);
+}
