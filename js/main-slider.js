@@ -1,4 +1,4 @@
-window.onload = function () {
+//window.onload = function () {
 
     var left = document.getElementById('clickjs3');
     var right = document.getElementById('clickjs4');
@@ -52,4 +52,4 @@ window.onload = function () {
 
     }
 
-}
+//}

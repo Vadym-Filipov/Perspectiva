@@ -4,7 +4,7 @@ head
 	meta(charset="UTF-8")
 	link(rel="stylesheet", href="../css/style.css")
 	link(rel="stylesheet", href="../css/normalize.css")
-	title Document
+	title Perspectiva
 body
 	header
 		.wrapper
@@ -12,9 +12,8 @@ body
 				.custom_phone custom care 888 23 4567
 				.my_info.cf
 					.my_ak my account
-					.my_cash
-						select us
-							//- option(autofocus) us
+					.my_cash $ us
+						//-ocus) us
 							option eu
 	.head-logo_menu
 		.wrapper.cf
@@ -56,14 +55,14 @@ body
 						| shop now
 	section.follow_us
 		.wrapper
-			label.follow_us-your_email
-				| Stay updated
-				input( type="text" placeholder="your email adress")
-			.follow_us-sotial
-				p Find us here
-				.follow_us-sotial_fb fb
-				.follow_us-sotial_tv tv
-				.follow_us-sotial_hui hui
+			form.followform(name="stayup") Stay updated
+				input(type="text" name="mail" value="")
+				input(type="submit" class="addbuttonshadow" value="")
+				p#error.errormail
+			.followleft Find us here
+				.follow_us-sotial_fb
+				.follow_us-sotial_tv
+				.follow_us-sotial_hz
 	section.ad
 		.wrapper
 			.slider_ad-left
@@ -86,7 +85,7 @@ body
 		wrapper
 			.content-clothes_collection
 				.clothes_collection-model
-					a(href="#" class=".clothes_collection-photo photo1")
+					img(src="../img/prod/foto11.jpg" class="position_model")
 					.clothes_collection-descr
 						.collection_descr-name
 							|nadia dress
@@ -95,7 +94,16 @@ body
 						a(href="#" class="collection_descr-btn")
 							add to cart
 				.clothes_collection-model
-					a(href="#" class=".clothes_collection-photo photo1")
+					img(src="../img/prod/foto1.jpg" class="position_model")
+					.clothes_collection-descr
+						.collection_descr-name
+							| nadia dress
+						.collection_descr-coast
+							| $64.95
+						a(href="#" class="collection_descr-btn")
+							add to cart
+				.clothes_collection-model
+					img(src="../img/prod/foto2.jpg" class="position_model")
 					.clothes_collection-descr
 						.collection_descr-name
 							|nadia dress
@@ -104,7 +112,7 @@ body
 						a(href="#" class="collection_descr-btn")
 							add to cart
 				.clothes_collection-model
-					a(href="#" class=".clothes_collection-photo photo1")
+					img(src="../img/prod/foto3.jpg" class="position_model")
 					.clothes_collection-descr
 						.collection_descr-name
 							|nadia dress
@@ -113,7 +121,7 @@ body
 						a(href="#" class="collection_descr-btn")
 							add to cart
 				.clothes_collection-model
-					a(href="#" class=".clothes_collection-photo photo1")
+					img(src="../img/prod/foto4.jpg" class="position_model")
 					.clothes_collection-descr
 						.collection_descr-name
 							|nadia dress
@@ -121,5 +129,24 @@ body
 							|$64.95
 						a(href="#" class="collection_descr-btn")
 							add to cart
-	script(src="../js/main-menu.js")
-	script(src="../js/main-slider.js")
+				.clothes_collection-model
+					img(src="../img/prod/foto44.jpg" class="position_model")
+					.clothes_collection-descr
+						.collection_descr-name
+							| nadia dress
+						.collection_descr-coast
+							| $64.95
+						a(href="#" class="collection_descr-btn")
+							add to cart
+		a(href="#" class="button_bynow") shop it
+
+
+	script(type="text/javascript" src="../js/main-menu.js")
+	script(type="text/javascript" src="../js/main-slider.js")
+	script(type="text/javascript" src="../js/stayupdated.js")
+	script(type="text/javascript" src="../js/bynow-button.js")
+
+
+
+
+

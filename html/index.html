@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <link rel="stylesheet" href="../css/style.css"/>
   <link rel="stylesheet" href="../css/normalize.css"/>
-  <title>Document</title>
+  <title>Perspectiva</title>
 </head>
 <body>
   <header>
@@ -13,10 +13,7 @@
         <div class="custom_phone">custom care 888 23 4567</div>
         <div class="my_info cf">
           <div class="my_ak">my account</div>
-          <div class="my_cash">
-            <select>us
-              <option>eu</option>
-            </select>
+          <div class="my_cash">$ us
           </div>
         </div>
       </div>
@@ -70,14 +67,15 @@
   </section>
   <section class="follow_us">
     <div class="wrapper">
-      <label class="follow_us-your_email">Stay updated
-        <input type="text" placeholder="your email adress"/>
-      </label>
-      <div class="follow_us-sotial">
-        <p>Find us here</p>
-        <div class="follow_us-sotial_fb">fb</div>
-        <div class="follow_us-sotial_tv">tv</div>
-        <div class="follow_us-sotial_hui">hui</div>
+      <form name="stayup" class="followform">Stay updated
+        <input type="text" name="mail" value=""/>
+        <input type="submit" value="" class="addbuttonshadow"/>
+        <p id="error" class="errormail"></p>
+      </form>
+      <div class="followleft">Find us here
+        <div class="follow_us-sotial_fb"></div>
+        <div class="follow_us-sotial_tv"></div>
+        <div class="follow_us-sotial_hz"></div>
       </div>
     </div>
   </section>
@@ -107,28 +105,42 @@
   <section class="clothes_collection">
     <wrapper>
       <div class="content-clothes_collection">
-        <div class="clothes_collection-model"><a href="#" class=".clothes_collection-photo photo1"></a>
+        <div class="clothes_collection-model"><img src="../img/prod/foto11.jpg" class="position_model"/>
           <div class="clothes_collection-descr">
             <div class="collection_descr-name">nadia dress</div>
             <div class="collection_descr-coast">$64.95</div><a href="#" class="collection_descr-btn">
               <add>to cart</add></a>
           </div>
         </div>
-        <div class="clothes_collection-model"><a href="#" class=".clothes_collection-photo photo1"></a>
+        <div class="clothes_collection-model"><img src="../img/prod/foto1.jpg" class="position_model"/>
           <div class="clothes_collection-descr">
             <div class="collection_descr-name">nadia dress</div>
             <div class="collection_descr-coast">$64.95</div><a href="#" class="collection_descr-btn">
               <add>to cart</add></a>
           </div>
         </div>
-        <div class="clothes_collection-model"><a href="#" class=".clothes_collection-photo photo1"></a>
+        <div class="clothes_collection-model"><img src="../img/prod/foto2.jpg" class="position_model"/>
           <div class="clothes_collection-descr">
             <div class="collection_descr-name">nadia dress</div>
             <div class="collection_descr-coast">$64.95</div><a href="#" class="collection_descr-btn">
               <add>to cart</add></a>
           </div>
         </div>
-        <div class="clothes_collection-model"><a href="#" class=".clothes_collection-photo photo1"></a>
+        <div class="clothes_collection-model"><img src="../img/prod/foto3.jpg" class="position_model"/>
+          <div class="clothes_collection-descr">
+            <div class="collection_descr-name">nadia dress</div>
+            <div class="collection_descr-coast">$64.95</div><a href="#" class="collection_descr-btn">
+              <add>to cart</add></a>
+          </div>
+        </div>
+        <div class="clothes_collection-model"><img src="../img/prod/foto4.jpg" class="position_model"/>
+          <div class="clothes_collection-descr">
+            <div class="collection_descr-name">nadia dress</div>
+            <div class="collection_descr-coast">$64.95</div><a href="#" class="collection_descr-btn">
+              <add>to cart</add></a>
+          </div>
+        </div>
+        <div class="clothes_collection-model"><img src="../img/prod/foto44.jpg" class="position_model"/>
           <div class="clothes_collection-descr">
             <div class="collection_descr-name">nadia dress</div>
             <div class="collection_descr-coast">$64.95</div><a href="#" class="collection_descr-btn">
@@ -136,8 +148,10 @@
           </div>
         </div>
       </div>
-    </wrapper>
+    </wrapper><a href="#" class="button_bynow">shop it</a>
   </section>
-  <script src="../js/main-menu.js"></script>
-  <script src="../js/main-slider.js"></script>
+  <script type="text/javascript" src="../js/main-menu.js"></script>
+  <script type="text/javascript" src="../js/main-slider.js"></script>
+  <script type="text/javascript" src="../js/stayupdated.js"></script>
+  <script type="text/javascript" src="../js/bynow-button.js"></script>
 </body>

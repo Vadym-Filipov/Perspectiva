@@ -69,6 +69,7 @@ header{
 nav{
 	float: right;
 	margin: 40px 25px 0 0;
+	z-index: 2;
 	ul{
 		display: block;
 		float: left;
@@ -99,11 +100,16 @@ nav{
 				border-right: 4.5px transparent solid;
 				}
 			}
-		li{
-			display: none;
+			li {
+				display: none;
+			}
+			ul.is-active li{
+				display: block;
+			}
 		}
+
 	
-	}
+
 }
 .bin{
 	float:right;
@@ -223,4 +229,87 @@ nav{
 			transform: translateY(-50%);
 		}
 	}
+}
+.follow_us {
+	color: #8a8a8a;
+	position: absolute;
+	display: inline-block;
+	left: 18.5%;
+	top: 65%;
+	background: #ededed;
+	text-align: center;
+	height: 55px;
+	width: 1200px;
+	line-height: 55px;
+	.followform {
+		float: left;
+	}
+		input {
+			color: grey;
+			font-style: italic;
+		}
+
+		.addbuttonshadow {
+			display: inline-block;
+			border: none;
+			width: 20px;
+			height: 20px;
+			background: #fd926d url("../img/addbuttlogo.jpg") no-repeat center;
+			border-bottom: 2px solid #dd6b44;
+		}
+		.errormail {
+			display: none;
+			color: red;
+
+	}
+	.followleft {
+		display: block;
+		position: relative;
+		float: right;
+		.follow_us-sotial_fb{
+			display: inline-block;
+			background: #f7f7f7 url("../img/shape2.png") no-repeat center;
+			height: 55px;
+			width: 55px;
+		}
+		.follow_us-sotial_tv{
+			display: inline-block;
+			background: url("../img/shape3.png") no-repeat center;
+			height: 55px;
+			width: 55px;
+		}
+		.follow_us-sotial_hz{
+			display: inline-block;
+			background: #f7f7f7 url("../img/shape4.png") no-repeat center;
+			height: 55px;
+			width: 55px;
+		}
+	}
+}
+.content-clothes_collection {
+	background: #fd926d;
+	padding: 10px;
+	width: 1200px;
+	overflow: hidden;
+}
+.clothes_collection-model {
+	display: inline-block;
+	margin-left: 20px;;
+}
+.button_bynow {
+	position: absolute;
+	z-index: 1;
+	height: 120px;
+	width: 120px;
+	line-height: 150px;
+	color: #fff;
+	text-decoration: none;
+	user-select: none;
+	background: url("../img/keylogo.jpg") no-repeat #3d3d3d center 30px;
+	outline: none;
+	text-align: center;
+	border-radius: 50%;
+	text-transform: uppercase;
+	display: none;
+
 }

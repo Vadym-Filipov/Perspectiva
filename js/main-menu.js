@@ -1,25 +1,22 @@
- window.onload = function () {
+//window.onload = function () {
 
     var clickme = document.getElementById('products');
-    var flag = false;
+    var flagmenu = false;
     clickme.onclick = function () {
-        alert('asdf')
-        
 
-        if ( !true ){
+        if ( flagmenu == !true ){
             clickme.classList.add('is-active');
-            alert('sdfg');
-            flag = true;
+            flagmenu = true;
             return;
-
         }
         else {
             clickme.classList.remove('is-active');
-            flag = false;
+            flagmenu = false;
             return;
         }
 
-    }
+
+  //  }
 
     //--------------------------------------------
     ///var landdown = document.getElementsByClassName('land');
