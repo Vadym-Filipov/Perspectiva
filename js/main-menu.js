@@ -5,7 +5,7 @@
     var landdown = document.getElementsByClassName('land');
     clickme.onclick = function () {
 
-        if ( flagmenu == !true ){
+        if (flagmenu == !true) {
             clickme.classList.add('is-active');
             flagmenu = true;
             return;
@@ -19,15 +19,15 @@
 
     }
 
-  //  --------------------------------------------
+    //  --------------------------------------------
 
-    for (var i = 0; i<landdown.length; i++) {
-    landdown[i].onklick = setset;
-        function setset () {
-        alert('12');
+    for (var i = 0; i < landdown.length; i++) {
+        landdown[i].onklick = function () {
+            alert('12');
 
         }
     }
+//}
 
 
 

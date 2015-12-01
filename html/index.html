@@ -12,7 +12,7 @@
       <div class="header-info cf">
         <div class="custom_phone">custom care 888 23 4567</div>
         <div class="my_info cf">
-          <div class="my_ak">my account</div>
+          <div id="showreg" class="my_ak">my account</div>
           <div class="my_cash">$ us
           </div>
         </div>
@@ -156,9 +156,22 @@
         </div>
       </div>
     </div><a href="#" class="button_bynow">shop it</a>
+    <section class="popupform">
+      <div class="divregformstyle"><span class="formtextspan"></span>REGISTER NOW
+        <form name="myregisterform" class="regformstyle">
+          <input type="text" name="fname" data-val-mark="Name" data-val-error="Check your name" data-val-flag="invalid" class="regformfield"/>
+          <input type="text" name="surname" data-val-mark="Surname" data-val-error="Check your surname" data-val-flag="invalid" class="regformfield"/>
+          <input type="text" name="phone" data-val-mark="Phone number" data-val-error="Check your phone number" data-val-flag="invalid" class="regformfield"/>
+          <input type="text" name="email" data-val-mark="Email" data-val-error="Check your email" data-val-flag="invalid" class="regformfield"/>
+          <input type="text" name="zip" data-val-mark="ZIP code" data-val-error="Check your zip code" data-val-flag="invalid" class="regformfield"/>
+          <input type="submit" value="SUBMIT" class="formfieldsub"/>
+        </form>
+      </div>
+    </section>
   </section>
   <script type="text/javascript" src="../js/main-menu.js"></script>
   <script type="text/javascript" src="../js/main-slider.js"></script>
   <script type="text/javascript" src="../js/stayupdated.js"></script>
   <script type="text/javascript" src="../js/bynow-button.js"></script>
+  <script type="text/javascript" src="../js/register-form.js"></script>
 </body>

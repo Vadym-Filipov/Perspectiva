@@ -261,8 +261,8 @@ nav #products.is-active li:hover a span {
     height: 440px;
     width: 100%;
     position: relative;
-    transition: 0.5s;
-    background-image: url("../img/main_slider/slide1.jpg") no-repeat right;
+    transition: 0.5s linear;
+	background-image: url("../img/main_slider/slide1.jpg") no-repeat right;
     background-position-x: right;
 	background-size: cover;
 }
@@ -477,6 +477,55 @@ input#follow-mail {
 	border-radius: 50%;
 	text-transform: uppercase;
 	display: none;
+
+}
+
+.popupform {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #8b8a86;
+	display: none;
+}
+.divregformstyle {
+	height: 330px;
+	width: 330px;
+	position: fixed;
+	color: white;
+	background: #fd926d !important;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+	top: 20%;
+	left: 40%;
+
+}
+.regformstyle {
+	position: fixed;
+	margin-top: 15px;
+	height: 300px;
+	width: 330px;
+	background: white;
+	padding-top: 10px;
+	border-top: 3px #dd6b44 solid;
+}
+.regformfield {
+	margin: 5px;
+	width: 250px;
+	height: 32px;
+	color: grey;
+}
+.formfieldsub {
+	position: fixed;
+	width: 95px;
+	height: 35px;
+	margin-top: 3%;
+	left: 50%;
+	border: none;
+	background: #4fafa0;
+	color: white;
+}
+.formtextspan {
 
 }
 

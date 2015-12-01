@@ -1,4 +1,4 @@
-//window.onload = function () {
+window.onload = function () {
     var input = document.forms[0].mail;
     var watermark = "Your email adress";
     var per = document.getElementById('error');
@@ -56,4 +56,4 @@
 
 
 
-//}
+}
