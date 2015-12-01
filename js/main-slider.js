@@ -5,7 +5,7 @@
     
     var go = ['../img/main_slider/slide1.jpg','../img/main_slider/slide2.jpg','../img/main_slider/slide3.jpg','../img/main_slider/slide4.jpg','../img/main_slider/slide5.jpg'];
     var step = 0;
-
+    var list = document.getElementsByClassName('showslidepos');
 
 
     left.onclick = moveLeft;
@@ -19,6 +19,18 @@
         }
         list[step].style.background = "#fd926d";
 
+    }
+
+    for (var j = 0; j<list.length; j++) {
+        list[j].onclick = setimgNow;
+        function setimgNow () {
+            clearInterval(myInter);
+            var entstep = event.target.id;
+            step = entstep;
+            setImg(go[step]);
+            myInter =  setInterval(moveRightAuto, 2000);
+
+        }
     }
 
     function moveLeft (){

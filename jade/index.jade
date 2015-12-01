@@ -29,9 +29,15 @@ body
 			nav
 				ul.home home
 				ul#products products
-					li: a(href="#") women
-					li: a(href="#") men
-					li: a(href="#") children
+					li.land: a(href="#")
+						span
+						| women
+					li.land: a(href="#")
+						span
+						| men
+					li.land: a(href="#")
+						span
+						| children
 				ul.shopping shopping
 				ul.contacts contacts
 			
@@ -42,24 +48,28 @@ body
 				input(id="clickjs4" type="button" value="" class="rightbutt")
 				div(class="div2")
 					ul
-						li.showslidepos
-						li.showslidepos
-						li.showslidepos
-						li.showslidepos
-						li.showslidepos
+						li.showslidepos#0
+						li.showslidepos#1
+						li.showslidepos#2
+						li.showslidepos#3
+						li.showslidepos#4
 				.slider_main-text
-					.main-text_crazy Crazy
+					.main-text_crazy 
+						span Crazy
 					img(src="../img/crazy_summer.png" class="main-text_summer" alt="")
 					.main-text_collection woman collection
 					a(href="#" class="btn-slider_main")
 						| shop now
 	section.follow_us
-		.wrapper
-			form.followform(name="stayup") Stay updated
-				input(type="text" name="mail" value="")
+		.wrapper.cf
+			form.followform.cf(name="stayup") 
+				label.follow_mail-lable(for="follow-mail")|Stay updated
+				input(type="text" name="mail" id="follow-mail" value="")
 				input(type="submit" class="addbuttonshadow" value="")
 				p#error.errormail
-			.followleft Find us here
+			.followleft.cf
+				.follow-text 
+					span Find us here
 				.follow_us-sotial_fb
 				.follow_us-sotial_tv
 				.follow_us-sotial_hz
@@ -82,8 +92,8 @@ body
 					p back to scool
 				a(href="#" class="ad_shop-btn")
 	section.clothes_collection
-		wrapper
-			.content-clothes_collection
+		.wrapper-all
+			.content-clothes_collection.cf
 				.clothes_collection-model
 					img(src="../img/prod/foto11.jpg" class="position_model")
 					.clothes_collection-descr
@@ -93,6 +103,7 @@ body
 							|$64.95
 						a(href="#" class="collection_descr-btn")
 							add to cart
+				.clothes_collection-model-int
 				.clothes_collection-model
 					img(src="../img/prod/foto1.jpg" class="position_model")
 					.clothes_collection-descr
@@ -102,6 +113,7 @@ body
 							| $64.95
 						a(href="#" class="collection_descr-btn")
 							add to cart
+				.clothes_collection-model-int
 				.clothes_collection-model
 					img(src="../img/prod/foto2.jpg" class="position_model")
 					.clothes_collection-descr
@@ -111,6 +123,7 @@ body
 							|$64.95
 						a(href="#" class="collection_descr-btn")
 							add to cart
+				.clothes_collection-model-int
 				.clothes_collection-model
 					img(src="../img/prod/foto3.jpg" class="position_model")
 					.clothes_collection-descr
@@ -120,6 +133,7 @@ body
 							|$64.95
 						a(href="#" class="collection_descr-btn")
 							add to cart
+				.clothes_collection-model-int
 				.clothes_collection-model
 					img(src="../img/prod/foto4.jpg" class="position_model")
 					.clothes_collection-descr
@@ -129,6 +143,7 @@ body
 							|$64.95
 						a(href="#" class="collection_descr-btn")
 							add to cart
+				.clothes_collection-model-int
 				.clothes_collection-model
 					img(src="../img/prod/foto44.jpg" class="position_model")
 					.clothes_collection-descr
@@ -145,8 +160,3 @@ body
 	script(type="text/javascript" src="../js/main-slider.js")
 	script(type="text/javascript" src="../js/stayupdated.js")
 	script(type="text/javascript" src="../js/bynow-button.js")
-
-
-
-
-

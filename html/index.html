@@ -35,9 +35,9 @@
       <nav>
         <ul class="home">home</ul>
         <ul id="products">products
-          <li><a href="#">women</a></li>
-          <li><a href="#">men</a></li>
-          <li><a href="#">children</a></li>
+          <li class="land"><a href="#"><span></span>women</a></li>
+          <li class="land"><a href="#"><span></span>men</a></li>
+          <li class="land"><a href="#"><span></span>children</a></li>
         </ul>
         <ul class="shopping">shopping</ul>
         <ul class="contacts">contacts</ul>
@@ -51,28 +51,30 @@
         <input id="clickjs4" type="button" value="" class="rightbutt"/>
         <div class="div2">
           <ul>
-            <li class="showslidepos"></li>
-            <li class="showslidepos"></li>
-            <li class="showslidepos"></li>
-            <li class="showslidepos"></li>
-            <li class="showslidepos"></li>
+            <li id="0" class="showslidepos"></li>
+            <li id="1" class="showslidepos"></li>
+            <li id="2" class="showslidepos"></li>
+            <li id="3" class="showslidepos"></li>
+            <li id="4" class="showslidepos"></li>
           </ul>
         </div>
         <div class="slider_main-text">
-          <div class="main-text_crazy">Crazy</div><img src="../img/crazy_summer.png" alt="" class="main-text_summer"/>
+          <div class="main-text_crazy"> <span>Crazy</span></div><img src="../img/crazy_summer.png" alt="" class="main-text_summer"/>
           <div class="main-text_collection">woman collection</div><a href="#" class="btn-slider_main">shop now</a>
         </div>
       </div>
     </div>
   </section>
   <section class="follow_us">
-    <div class="wrapper">
-      <form name="stayup" class="followform">Stay updated
-        <input type="text" name="mail" value=""/>
+    <div class="wrapper cf">
+      <form name="stayup" class="followform cf"> 
+        <label for="follow-mail" class="follow_mail-lable">Stay updated</label>
+        <input type="text" name="mail" id="follow-mail" value=""/>
         <input type="submit" value="" class="addbuttonshadow"/>
         <p id="error" class="errormail"></p>
       </form>
-      <div class="followleft">Find us here
+      <div class="followleft cf">
+        <div class="follow-text"> <span>Find us here</span></div>
         <div class="follow_us-sotial_fb"></div>
         <div class="follow_us-sotial_tv"></div>
         <div class="follow_us-sotial_hz"></div>
@@ -103,8 +105,8 @@
     </div>
   </section>
   <section class="clothes_collection">
-    <wrapper>
-      <div class="content-clothes_collection">
+    <div class="wrapper-all">
+      <div class="content-clothes_collection cf">
         <div class="clothes_collection-model"><img src="../img/prod/foto11.jpg" class="position_model"/>
           <div class="clothes_collection-descr">
             <div class="collection_descr-name">nadia dress</div>
@@ -112,6 +114,7 @@
               <add>to cart</add></a>
           </div>
         </div>
+        <div class="clothes_collection-model-int"></div>
         <div class="clothes_collection-model"><img src="../img/prod/foto1.jpg" class="position_model"/>
           <div class="clothes_collection-descr">
             <div class="collection_descr-name">nadia dress</div>
@@ -119,6 +122,7 @@
               <add>to cart</add></a>
           </div>
         </div>
+        <div class="clothes_collection-model-int"></div>
         <div class="clothes_collection-model"><img src="../img/prod/foto2.jpg" class="position_model"/>
           <div class="clothes_collection-descr">
             <div class="collection_descr-name">nadia dress</div>
@@ -126,6 +130,7 @@
               <add>to cart</add></a>
           </div>
         </div>
+        <div class="clothes_collection-model-int"></div>
         <div class="clothes_collection-model"><img src="../img/prod/foto3.jpg" class="position_model"/>
           <div class="clothes_collection-descr">
             <div class="collection_descr-name">nadia dress</div>
@@ -133,6 +138,7 @@
               <add>to cart</add></a>
           </div>
         </div>
+        <div class="clothes_collection-model-int"></div>
         <div class="clothes_collection-model"><img src="../img/prod/foto4.jpg" class="position_model"/>
           <div class="clothes_collection-descr">
             <div class="collection_descr-name">nadia dress</div>
@@ -140,6 +146,7 @@
               <add>to cart</add></a>
           </div>
         </div>
+        <div class="clothes_collection-model-int"></div>
         <div class="clothes_collection-model"><img src="../img/prod/foto44.jpg" class="position_model"/>
           <div class="clothes_collection-descr">
             <div class="collection_descr-name">nadia dress</div>
@@ -148,7 +155,7 @@
           </div>
         </div>
       </div>
-    </wrapper><a href="#" class="button_bynow">shop it</a>
+    </div><a href="#" class="button_bynow">shop it</a>
   </section>
   <script type="text/javascript" src="../js/main-menu.js"></script>
   <script type="text/javascript" src="../js/main-slider.js"></script>

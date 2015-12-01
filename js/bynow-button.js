@@ -4,7 +4,7 @@
 var images = document.getElementsByClassName("position_model");
 var knopkabynow = document.getElementsByClassName('button_bynow')[0];
 var origX, origY;
-for (var i = 0; i < images.length; i++) {
+for (var i = 1; i < images.length-1; i++) {
     images[i].onmouseover = function () {
 
         origX = event.target.offsetLeft;

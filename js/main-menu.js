@@ -2,6 +2,7 @@
 
     var clickme = document.getElementById('products');
     var flagmenu = false;
+    var landdown = document.getElementsByClassName('land');
     clickme.onclick = function () {
 
         if ( flagmenu == !true ){
@@ -16,16 +17,17 @@
         }
 
 
-  //  }
+    }
 
-    //--------------------------------------------
-    ///var landdown = document.getElementsByClassName('land');
-    //for (var i = 0; i<landdown.length; i++) {
-    ///landdown[0].onklick = function () {
-    //    this.style.background = 'red';
+  //  --------------------------------------------
 
-   //     }
-   // }
+    for (var i = 0; i<landdown.length; i++) {
+    landdown[i].onklick = setset;
+        function setset () {
+        alert('12');
+
+        }
+    }
 
 
-}
+
