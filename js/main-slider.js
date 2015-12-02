@@ -1,4 +1,4 @@
-//window.onload = function () {
+(function () {
 
     var left = document.getElementById('clickjs3');
     var right = document.getElementById('clickjs4');
@@ -64,4 +64,6 @@
 
     }
 
-//}
+})();
+
+(function () {   } )()

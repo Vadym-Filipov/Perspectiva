@@ -262,7 +262,7 @@ nav #products.is-active li:hover a span {
     width: 100%;
     position: relative;
     transition: 0.5s linear;
-	background-image: url("../img/main_slider/slide1.jpg") no-repeat right;
+	background-image: url("../img/main_slider/slide1.jpg");
     background-position-x: right;
 	background-size: cover;
 }
@@ -494,10 +494,10 @@ input#follow-mail {
 	color: white;
 	background: #fd926d !important;
 	text-align: center;
-	margin: 0 auto;
+	margin-left: 0 auto;
 	font-size: 20px;
-	top: 20%;
-	left: 40%;
+	top: 30%;
+
 
 }
 .regformstyle {

@@ -1,11 +1,10 @@
-/**
- * Created by Melkore on 01.12.2015.
- */
-var watermark, value, watermark2;
+(function () {
+
+    var watermark, value, watermark2;
 var fields = document.getElementsByClassName('regformfield');
 var activateform = document.getElementsByClassName('popupform')[0];
 var showme = document.getElementById('showreg');
-showme.oncklick = function () {
+showme.onclick = function () {
     activateform.style.display = 'block';
 }
     function setmarker() {
@@ -108,3 +107,6 @@ showme.oncklick = function () {
             }
 
         }
+})();
+
+(function () {   } )()

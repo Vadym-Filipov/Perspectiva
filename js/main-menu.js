@@ -1,4 +1,4 @@
-//window.onload = function () {
+(function () {
 
     var clickme = document.getElementById('products');
     var flagmenu = false;
@@ -22,12 +22,14 @@
     //  --------------------------------------------
 
     for (var i = 0; i < landdown.length; i++) {
-        landdown[i].onklick = function () {
+        landdown[i].onclick = function () {
             alert('12');
 
         }
     }
-//}
+})();
+
+(function () {   } )()
 
 
 
