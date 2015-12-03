@@ -11,7 +11,7 @@
             knopkabynow.style.left = origX + 50 + 'px';
             knopkabynow.style.top = origY + 75 +'px';
 
-        }
+        };
 
 
         images[i].onmouseout = function () {
@@ -25,4 +25,4 @@
     }
 })();
 
-(function () {   } )()
+(function () {   } )();

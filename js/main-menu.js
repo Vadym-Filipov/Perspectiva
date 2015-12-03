@@ -5,19 +5,19 @@
     var landdown = document.getElementsByClassName('land');
     clickme.onclick = function () {
 
-        if (flagmenu == !true) {
+        if (flagmenu == false) {
             clickme.classList.add('is-active');
             flagmenu = true;
-            return;
+            //return;
         }
         else {
             clickme.classList.remove('is-active');
             flagmenu = false;
-            return;
+           // return;
         }
 
 
-    }
+    };
 
     //  --------------------------------------------
 
@@ -29,7 +29,7 @@
     }
 })();
 
-(function () {   } )()
+(function () {   } )();
 
 
 

@@ -11,7 +11,7 @@
             input.style.color = "black";
             input.style.fontStyle = "normal";
         }
-    }
+    };
 
     input.onblur = function () {
         if (input.value == "")
@@ -21,7 +21,7 @@
             input.style.fontStyle = "italic";
             per.style.display = 'none'
         }
-    }
+    };
 
 
     stayup.mail.onchange = emailOnChange;
@@ -58,4 +58,4 @@
 
 })();
 
-(function () {   } )()
+(function () {   } )();

@@ -261,10 +261,9 @@ nav #products.is-active li:hover a span {
     height: 440px;
     width: 100%;
     position: relative;
-    transition: 0.5s linear;
-	background-image: url("../img/main_slider/slide1.jpg");
-    background-position-x: right;
-	background-size: cover;
+	transition: all 500ms ease;
+	background: #f3efe7 url("../img/main_slider/slide1.jpg") no-repeat;
+
 }
 .leftbutt {
     position: absolute;
@@ -292,12 +291,18 @@ nav #products.is-active li:hover a span {
     text-align: center;
     bottom: -50px;
 	.showslidepos {
-	    margin: 5px;
+		margin: 5px;
 	    display: inline-block;
 	    border-radius: 50%;
 	    width: 10px;
 	    height: 10px;
 	    background-color: $gray-darken;
+	}
+	.showslidepos:first-child {
+		background-color: #fd926d;
+	}
+	.showslidepos:hover {
+		background-color: #fd926d;
 	}
 }
 

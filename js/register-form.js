@@ -6,7 +6,7 @@ var activateform = document.getElementsByClassName('popupform')[0];
 var showme = document.getElementById('showreg');
 showme.onclick = function () {
     activateform.style.display = 'block';
-}
+};
     function setmarker() {
         for (var i = 0; i < fields.length; i++) {
 
@@ -23,7 +23,7 @@ showme.onclick = function () {
                     this.style.color = "black";
                     this.style.fontStyle = "normal";
                 }
-            }
+            };
 
             fields[i].onblur = function () {
                 watermark = this.dataset.valMark;
@@ -38,7 +38,7 @@ showme.onclick = function () {
         }
     }
 
-    setmarker()
+    setmarker();
     myregisterform.fname.onchange = nameOnChange;
     myregisterform.surname.onchange = surnameOnChange;
     myregisterform.phone.onchange = phoneOnchange;
@@ -109,4 +109,4 @@ showme.onclick = function () {
         }
 })();
 
-(function () {   } )()
+(function () {   } )();
