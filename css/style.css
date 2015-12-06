@@ -244,6 +244,103 @@ address {
   clear: both;
 }
 
+nav {
+  float: right;
+  margin: 40px 25px 0 0;
+  z-index: 2;
+}
+
+nav ul.main-menu {
+  display: block;
+}
+
+nav ul.main-menu li {
+  display: block;
+  float: left;
+  padding: 0 15px;
+  height: 35px;
+  line-height: 35px;
+  transition: all 0.2s linear 0s;
+}
+
+nav ul.main-menu li:hover {
+  background-color: #fd926d;
+  color: #fff;
+}
+
+#products {
+  padding: 0 20px 0 15px;
+  z-index: 1;
+}
+
+#products:hover:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 15.5px;
+  border-bottom: 6px #fff solid;
+  border-left: 4.5px transparent solid;
+  border-right: 4.5px transparent solid;
+}
+
+#products ul.menu-item {
+  display: block;
+}
+
+#products ul.menu-item li.land {
+  display: none;
+  float: none;
+  color: #fd926d;
+  background: #fff;
+  padding: 0.5em 1em 0.5em 15px;
+  width: 190px;
+}
+
+#products ul.menu-item li.land a {
+  text-decoration: none;
+  display: block;
+  color: #fd926d;
+  background: #fff;
+  height: 100%;
+}
+
+#products ul.menu-item li.land a span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fd926d;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+#products ul.menu-item li.land:hover a {
+  color: #fff !important;
+  background: #fd926d !important;
+}
+
+#products ul.menu-item li.land:hover a span {
+  color: #fff;
+  background: #fff;
+}
+
+#products.is-active ul.menu-item li {
+  display: block;
+}
+
+.btn-add-to-card {
+  display: block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background: #fd926d;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
 html, body {
   width: 100%;
 }
@@ -372,90 +469,6 @@ nav{
 		}
 }
 */
-nav {
-  float: right;
-  margin: 40px 25px 0 0;
-  z-index: 2;
-}
-
-nav ul {
-  display: block;
-  float: left;
-  padding: 0 15px;
-  height: 35px;
-  line-height: 35px;
-  margin: 0 auto;
-  position: relative;
-  transition: all 0.2s linear 0s;
-}
-
-nav ul:hover {
-  background-color: #fd926d;
-  color: #fff;
-}
-
-nav #products {
-  padding: 0 20px 0 15px;
-  z-index: 1;
-}
-
-nav #products:hover:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 5px;
-  top: 15.5px;
-  border-bottom: 6px #fff solid;
-  border-left: 4.5px transparent solid;
-  border-right: 4.5px transparent solid;
-}
-
-nav #products li {
-  display: none;
-}
-
-#products li a {
-  text-decoration: none;
-}
-
-nav #products.is-active li {
-  display: block;
-  color: #fd926d;
-  background: #fff;
-  padding: 0.5em 0 0.5em 15px;
-  width: 100%;
-}
-
-nav #products.is-active li a {
-  display: block;
-  color: #fd926d;
-  background: #fff;
-}
-
-nav #products.is-active li a span {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #fd926d;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav #products.is-active li:hover {
-  color: #fff !important;
-  background: #fd926d !important;
-}
-
-nav #products.is-active li:hover a {
-  color: #fff !important;
-  background: #fd926d !important;
-}
-
-nav #products.is-active li:hover a span {
-  color: #fd926d;
-  background: #fff;
-}
-
 .bin {
   float: right;
   width: 215px;
@@ -718,24 +731,40 @@ input#follow-mail {
   float: left;
 }
 
+.label-clothes_collection {
+  padding: 0.5em;
+  color: #000;
+}
+
+.radio-clothes_collection {
+  visibility: hidden;
+  outline: none;
+  background: #fff;
+}
+
+.radio-clothes_collection:checked {
+  background: #fd926d;
+}
+
+.clothes_collection .wrapper-all {
+  overflow: hidden;
+}
+
 .content-clothes_collection {
   background: #fd926d;
-  min-width: 970px;
-  width: 1200px;
-  height: 455px;
-  overflow: hidden;
-  display: inline-block;
+  white-space: nowrap;
+  display: block;
   padding: 30px 0;
-  overflow: hidden;
+  margin-left: -160px;
 }
 
 .clothes_collection-model {
+  margin: 0 15px;
+  width: 220px;
+  background: #f7f7f7;
   display: inline-block;
-}
-
-.clothes_collection-model-int {
-  width: 21.1px;
-  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
 }
 
 .button_bynow {
@@ -753,6 +782,42 @@ input#follow-mail {
   border-radius: 50%;
   text-transform: uppercase;
   display: none;
+}
+
+.chalange {
+  position: relative;
+}
+
+.chalange img {
+  display: block;
+  position: relative;
+  left: 50%;
+}
+
+.chalange .chalange-text {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+}
+
+.clothes_collection-mode {
+  float: left;
+  margin: 0 15px;
+  width: 220px;
+  background: #f7f7f7;
+}
+
+.clothes_collection-mode:first-child {
+  margin-left: 0;
+}
+
+.clothes_collection-mode:last-child {
+  margin-right: 0;
+}
+
+.clothes_collection-mode .clothes_collection-descr {
+  text-align: center;
 }
 
 .popupform {
