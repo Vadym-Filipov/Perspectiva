@@ -10,6 +10,11 @@ html, body{
 .head-logo_menu{
 
 }
+
+.my_ak {
+	cursor: pointer;
+}
+
 .logo{
 	float: left;
 	display: block;
@@ -100,6 +105,7 @@ html, body{
     text-align: center;
     bottom: -50px;
 	.showslidepos {
+		cursor: pointer;
 		margin: 5px;
 	    display: inline-block;
 	    border-radius: 50%;
@@ -305,38 +311,47 @@ input#follow-mail {
 }
 
 .button-slider_right {
+	position: relative;
 	 width: 50px;
 	 height: 50px;
 	 float: right;
 	 background: #f2f2f2;
 	 &:after {
 		 content: "";
-		 position: relative;
+		 position: absolute;
 		 display: block;
+		 height: 20px;
+		 width: 20px;
 		 border-bottom: 2px #979797 solid;
-		 border-left: 2px #979797 solid;
-		 top: 75%;
-		 margin-left: 15px;
+		 border-left: 2px #979797 solid ;
+		 top: 30%;
+		 left: 40%;
 		 transform: rotate(45deg);
 	 }
 	 &:hover {
 		 background: $orange;
+		 &:after {
+			 border-color: #f2f2f2;
+		 }
 	 }
  }
 .button-slider_left {
+	position: relative;
 	width: 50px;
 	height: 50px;
 	float: right;
 	background: #f2f2f2;
-	&:after {
+	&:after{
 		content: "";
-		position: relative;
+		position: absolute;
 		display: block;
+		height: 20px;
+		width: 20px;
 		border-bottom: 2px #979797 solid;
-		border-left: 2px #979797 solid;
-		top: 75%;
-		margin-right: 15px;
-		transform: rotate(315deg);
+		border-left: 2px #979797 solid ;
+		top: 30%;
+		right: 40%;
+		transform: rotate(225deg);
 	}
 	&:hover {
 		background: $orange;
@@ -417,4 +432,87 @@ input#follow-mail {
 	}
 }
 
+.slider_ad-left {
+	background: url("../img/menad.jpg");
+	width: 484px;
+	height: 340px;
+	float: left;
+	margin-bottom: 30px;
+}
 
+.slider_ad-rtop {
+	background: url("../img/womenad.jpg");
+	width: 484px;
+	height: 169px;
+	position: relative;
+	float: right;
+	margin-bottom: 2px;
+	.ad-rtop_women-text {
+		height: 132px;
+		width: 132px;
+		position: absolute;
+		border-radius: 50%;
+		background: #fff;
+		margin-left: 30px;
+		margin-top: 20px;
+		&:after{
+			content: "";
+			display: block;
+			position: relative;
+			height: 120px;
+			width: 120px;
+			border-radius: 50%;
+			border: #dbebec 2px solid;
+			margin-left: 4px;
+			bottom: 86%;
+		}
+		p {
+			text-align: center;
+		}
+	}
+}
+
+.slider_ad-rbottom {
+	background: url("../img/childrenad.jpg");
+	position: relative;
+	width: 484px;
+	height: 169px;
+	float: right;
+	margin-bottom: 30px;
+	.ad-rbottom_child-text p  {
+		position: absolute;
+		bottom: -10%;
+		color: #fff;
+		text-transform: uppercase;
+		margin-left: 25px;
+		font-size: 18pt;
+
+	}
+	.ad_shop-btn {
+		display: inline-block;
+		width: 100px;
+		height: 30px;
+		line-height: 30px;
+		color: $white;
+		font-size: 8pt;
+		background: #4fafa0;
+		text-align: left;
+		padding-left: 10px;
+		text-decoration: none;
+		position: absolute;
+		text-transform: uppercase;
+		bottom: 5%;
+		right: 2%;
+		&:after{
+			content: "";
+			display: block;
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			border-bottom: 4.5px transparent solid;
+			border-left: 6px $white solid;
+			border-top: 4.5px transparent solid;
+			transform: translateY(-50%);
+		}
+	}
+}

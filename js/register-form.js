@@ -4,6 +4,7 @@
 var fields = document.getElementsByClassName('regform-field');
 var activateform = document.getElementsByClassName('popupform')[0];
 var showme = document.getElementById('showreg');
+var closeform = document.getElementsByClassName('form-close')[0];
 
 showme.onclick = function () {
     activateform.style.display = 'block';
@@ -109,6 +110,10 @@ showme.onclick = function () {
             }
 
         }
+    closeform.onclick = function (event) {
+        activateform.style.display = 'none';
+        event.stopPropagation();
+    }
 
 })();
 

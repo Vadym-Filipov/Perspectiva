@@ -92,10 +92,11 @@ body
 					p new
 					p collection
 				a(href="#" class="ad_shop-btn")
-			.slider_ad-rbottom
-				.ad-rbottom_child-text
+			.slider_ad-rbottom.cf
+				.ad-rbottom_child-text.cf
 					p back to scool
 				a(href="#" class="ad_shop-btn")
+					| SHOP NOW
 	section.clothes_collection
 		.wrapper
 			input(type="radio" name="radio-clothes_collection" id="whats_hot" checked href="#")
@@ -200,7 +201,7 @@ body
 					.collection_descr-coast
 						|$76
 					a.btn-add-to-card add to cart
-	a(name="adcollection")
+	a(name="adcollection" class = 'scrolltome')
 	
 
 	script(type="text/javascript" src="../js/main-menu.js")
@@ -210,4 +211,5 @@ body
 	script(type="text/javascript" src="../js/register-form.js")
 	script(type="text/javascript" src="../js/add-to-cart.js")
 	script(type="text/javascript" src="../js/adcollection.js")
+	script(type="text/javascript" src="../js/scroll.js")
 

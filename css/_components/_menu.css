@@ -1,0 +1,85 @@
+nav {
+  float: right;
+  margin: 40px 25px 0 0;
+  z-index: 2;
+}
+
+nav ul.main-menu {
+  display: block;
+}
+
+nav ul.main-menu li {
+  cursor: pointer;
+  display: block;
+  float: left;
+  padding: 0 15px;
+  height: 35px;
+  line-height: 35px;
+  transition: all 0.2s linear 0s;
+}
+
+nav ul.main-menu li:hover {
+  background-color: #fd926d;
+  color: #fff;
+}
+
+#products {
+  padding: 0 20px 0 15px;
+  z-index: 1;
+}
+
+#products:hover:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 15.5px;
+  border-bottom: 6px #fff solid;
+  border-left: 4.5px transparent solid;
+  border-right: 4.5px transparent solid;
+}
+
+#products ul.menu-item {
+  display: block;
+}
+
+#products ul.menu-item li.land {
+  display: none;
+  float: none;
+  color: #fd926d;
+  background: #fff;
+  padding: 0.5em 1em 0.5em 15px;
+  width: 190px;
+}
+
+#products ul.menu-item li.land a {
+  text-decoration: none;
+  display: block;
+  color: #fd926d;
+  background: #fff;
+  height: 100%;
+}
+
+#products ul.menu-item li.land a span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fd926d;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+#products ul.menu-item li.land:hover a {
+  color: #fff !important;
+  background: #fd926d !important;
+}
+
+#products ul.menu-item li.land:hover a span {
+  color: #fff;
+  background: #fff;
+}
+
+#products.is-active ul.menu-item li {
+  display: block;
+}

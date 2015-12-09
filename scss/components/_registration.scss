@@ -1,5 +1,6 @@
 .overlay{
 	display: none;
+	cursor: auto;
 }
 
 .popupform {
@@ -63,6 +64,12 @@
 	}
 }
 
-.formtextspan {
+.form-close {
+	float: right;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	border-bottom: 2px solid $orange-darkest;
+	cursor: pointer;
 
 }

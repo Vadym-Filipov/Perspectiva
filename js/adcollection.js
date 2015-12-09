@@ -15,9 +15,10 @@
     var mas1, mas2, mas3;
 
     for (var i = 0; i < landdown.length; i++) {
-        landdown[i].onclick = function () {
+        landdown[i].onclick = function (event) {
             clickme.classList.remove('is-active');
             flagmenu = false;
+            event.stopPropagation();
             if (event.target.text == " men") {
                 mas1 = menimg;
                 mas2 = mendesc;
