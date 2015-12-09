@@ -12,7 +12,7 @@
     right.onclick = moveRight;
 
     function setImg (img){
-        document.getElementById('div1').style.background = "#f3efe7 url("+img+") no-repeat";
+        document.getElementById('div1').style.background = "url("+img+") no-repeat";
         var list = document.getElementsByClassName('showslidepos');
         for (var i = 0; i < list.length; i++) {
             if (list[i].style.background != "rgb(253, 146, 110)"){
