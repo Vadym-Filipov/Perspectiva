@@ -1,8 +1,15 @@
-@import "normalize";
-@import "variables";
-@import "helpers";
+@import "helpers/variables";
+@import "helpers/normalize";
+@import "helpers/helpers";
+@import "helpers/mixins";
 
-@import "_components/menu";
-@import "_components/buttons";
+@import "base/typography";
 
-@import "main";
+@import "layout/header";
+@import "layout/footer";
+
+@import "components/menu";
+@import "components/buttons";
+@import "components/registration";
+
+@import "pages/main";

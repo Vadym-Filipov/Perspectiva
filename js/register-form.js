@@ -1,21 +1,23 @@
 (function () {
 
     var watermark, value, watermark2;
-var fields = document.getElementsByClassName('regformfield');
+var fields = document.getElementsByClassName('regform-field');
 var activateform = document.getElementsByClassName('popupform')[0];
 var showme = document.getElementById('showreg');
+
 showme.onclick = function () {
     activateform.style.display = 'block';
 };
     function setmarker() {
-        for (var i = 0; i < fields.length; i++) {
+        for ( var j = 0; j < fields.length; j++ ) {
 
-            var setwater = fields[i];
-            watermark = fields[i].dataset.valMark;
-            value = fields[i].value;
+            var setwater = fields[j];
+            setwater.style.color = "grey";
+            watermark = fields[j].dataset.valMark;
+            value = fields[j].value;
             setwater.value = watermark;
 
-            fields[i].onfocus = function () {
+            fields[j].onfocus = function () {
                 watermark = this.dataset.valMark;
                 value = this.value;
                 if (this.value == watermark || watermark2 != "") {
@@ -25,7 +27,7 @@ showme.onclick = function () {
                 }
             };
 
-            fields[i].onblur = function () {
+            fields[j].onblur = function () {
                 watermark = this.dataset.valMark;
                 value = this.value;
                 if (this.value == "") {
@@ -107,6 +109,7 @@ showme.onclick = function () {
             }
 
         }
+
 })();
 
 (function () {   } )();

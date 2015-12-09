@@ -1,0 +1,84 @@
+/*
+===========================
+     --- MAIN MENU ---
+===========================
+*/
+
+nav{
+  float: right;
+  margin: 40px 25px 0 0;
+  ul.main-menu{
+    display: block;
+    li.main-menu-li{
+      float: left;
+      display: block;
+      padding: 0 15px;
+      height: 35px;
+      line-height: 35px;
+      transition: all 0.2s linear 0s;
+      &:hover {
+        background-color: #fd926d;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#products{
+  padding-right: 20px;
+  position: relative;
+  &:hover:after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 15.5px;
+    border-bottom: 6px #fff solid;
+    border-left: 4.5px transparent solid;
+    border-right: 4.5px transparent solid;
+  }
+  ul.menu-item{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block;
+    width: 100%;
+    z-index: 1;
+    li.land{
+      display: none;
+      float: none;
+      color: $orange;
+      background: #fff;
+      width: 150px;
+      a.menu-link{
+        text-decoration: none;
+        display: block;
+        color: $orange;
+        background: $white;
+        transition: all 0.2s linear 0s;
+        & span {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: $orange;
+          display: inline-block;
+          margin-right: 10px;
+          margin-left: 20px;
+        }
+      }
+      &:hover{
+        a.menu-link{
+          color: $white;
+          background: $orange;
+          span {
+            background: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+#products.is-active ul.menu-item li{
+  display: block;
+}

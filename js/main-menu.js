@@ -16,17 +16,15 @@
            // return;
         }
 
-
     };
-
-    //  --------------------------------------------
-
-    for (var i = 0; i < landdown.length; i++) {
-        landdown[i].onclick = function () {
-            alert('12');
-
+    $(document).mouseup(function (e) {
+        var container = $("main-menu-li");
+        if (container.has(e.target).length == 0 && e.target.id != 'products'){
+            clickme.classList.remove('is-active');
+            flagmenu = false;
         }
-    }
+    });
+
 })();
 
 (function () {   } )();

@@ -1,0 +1,68 @@
+.overlay{
+	display: none;
+}
+
+.popupform {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0, 0.6);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.box{
+	margin: 150px auto 0; 
+	width: 330px;
+	z-index: 2;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+	-o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.form-h{
+	background: $orange;
+	color: $white;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 2px solid $orange-darkest;
+}
+
+.regform-style {
+	padding: 20px 40px;
+	display: block;
+	background: $white;
+}
+
+.regform-field {
+	display: block;
+	width: 100%;
+	margin: 15px 0;
+	padding: 0 10px;
+	height: 32px;
+	color: $gray;
+	line-height: 32px;
+	&:first-child{
+		margin-top: 0;
+	}
+}
+
+.formfield-sub{
+	.formfield-btn {
+	display: inline-block;
+	float: right;
+	background: $green;
+	color: $white;
+	border: none;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 25px;
+	}
+}
+
+.formtextspan {
+
+}

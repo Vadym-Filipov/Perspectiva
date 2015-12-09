@@ -1,5 +1,5 @@
 (function () {
-    var input = document.forms[0].mail;
+    var input = document.stayup.mail;
     var watermark = "Your email adress";
     var per = document.getElementById('error');
 
@@ -9,7 +9,7 @@
         {
             input.value = "";
             input.style.color = "black";
-            input.style.fontStyle = "normal";
+            //input.style.fontStyle = "normal";
         }
     };
 
@@ -18,7 +18,7 @@
         {
             input.value = watermark;
             input.style.color = "grey";
-            input.style.fontStyle = "italic";
+            //input.style.fontStyle = "italic";
             per.style.display = 'none'
         }
     };

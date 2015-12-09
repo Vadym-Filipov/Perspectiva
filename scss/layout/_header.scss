@@ -1,0 +1,45 @@
+/*
+==============================
+        --- HEADER ---
+==============================
+*/
+header{
+	background-color: #000;
+	color: #fff;
+	height: 30px;
+	.wrapper{
+			height: 100%;
+		.header-info{
+				height: 100%;
+				line-height: 30px;
+				text-transform: uppercase;
+			.custom_phone{
+				float: left;
+				height: 100%;
+			}
+			.my_info{
+				float: right;
+				height: 100%;
+			}
+			
+		}
+		
+	}
+	
+}
+.my_ak{
+	float: left;
+	border-left: 2px $gray solid;
+	border-right: 2px $gray solid;	
+	padding: 0 10px 0 25px;
+	height: 100%;
+	background: url("../img/ak.png") no-repeat 5px center;
+	
+}
+.my_cash{
+	float:right;
+	display: block;
+	border-right: 2px $gray solid;	
+	padding: 0 10px;
+	height: 100%;
+}
