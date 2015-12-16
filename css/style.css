@@ -775,6 +775,7 @@ input#follow-mail {
 .label-clothes_collection {
   padding: 0.5em;
   color: #000;
+  cursor: pointer;
 }
 
 .label-clothes_collection {
@@ -811,6 +812,7 @@ input#follow-mail {
   height: 50px;
   float: right;
   background: #f2f2f2;
+  cursor: pointer;
 }
 
 .button-slider_right:after {
@@ -840,6 +842,7 @@ input#follow-mail {
   height: 50px;
   float: right;
   background: #f2f2f2;
+  cursor: pointer;
 }
 
 .button-slider_left:after {
@@ -1026,4 +1029,75 @@ input#follow-mail {
   border-left: 6px #fff solid;
   border-top: 4.5px transparent solid;
   transform: translateY(-50%);
+}
+
+.main_footer-content {
+  position: relative;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.main_brands {
+  z-index: 5;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.maim_brands-line {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-top: #d8d8d8 2px solid;
+  top: 2%;
+}
+
+.footer_brands {
+  position: relative;
+  height: 95px;
+  display: block;
+}
+
+.brands_img {
+  position: relative;
+  display: inline-block;
+  top: 20%;
+  margin-right: 47px;
+  float: left;
+  line-height: 95px;
+}
+
+.brands_img:nth-child(8) {
+  margin: 0;
+}
+
+.footer_about {
+  height: 65px;
+  padding-top: 20px;
+  border-top: #d8d8d8 2px solid;
+  font-size: 18pt;
+}
+
+.footer_about_text {
+  color: #999999;
+  padding-bottom: 15px;
+}
+
+.footer_pay-cards {
+  position: relative;
+  background-color: #f7f7f7;
+  height: 60px;
+}
+
+.pay_text {
+  color: #c5c5c5;
+  display: inline-block;
+  line-height: 60px;
+  margin-right: 15px;
+}
+
+.pay_img {
+  display: inline-block;
+  margin-top: 18px;
 }

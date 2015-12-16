@@ -43,6 +43,10 @@
                 collection[j].children[1].children[1].textContent = mas3[j];
 
             }
+            elementClick = jQuery(this).attr("href")
+            destination = jQuery('a.scrolltome').offset().top;
+            jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+            return false;
         }
     }
 })();
