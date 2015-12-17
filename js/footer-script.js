@@ -6,9 +6,9 @@ $(function () {
     var accept = "We accept"
 
     $('.main_brands').text(favbrands);
-    $('.footer_about').html(about);
-    $('.footer_about_text').html(abouttext);
-    $('.pay_text').html(accept);
+    $('.footer_about').text(about);
+    $('.footer_about_text').text(abouttext);
+    $('.pay_text').text(accept);
     $('.pay_img').html('<img src="../img/footer/paycards.jpg"/>');
     $('.brands_img:nth-child(1)').html('<img src="../img/footer/addict.jpg"/>');
     $('.brands_img:nth-child(2)').html('<img src="../img/footer/abandon.jpg"/>');
