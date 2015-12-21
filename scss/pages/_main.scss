@@ -381,7 +381,7 @@ input#follow-mail {
 
 }
 .clothes_collection-model {
-	position: relative;
+	position: absolute;
 	margin: 0 15px;
 	width: 220px;
 	background: $gray-lighest;
@@ -389,6 +389,32 @@ input#follow-mail {
 	vertical-align: top;
 	white-space: nowrap;
 	text-align: center;
+
+	&:nth-child(1) {
+		left: -250px;
+	}
+	&:nth-child(2) {
+		left: 0px;
+	}
+	&:nth-child(3) {
+		left: 250px;
+	}
+	&:nth-child(4) {
+		left: 500px;
+	}
+	&:nth-child(5) {
+		left: 750px;
+	}
+	&:nth-child(6) {
+		left: 1000px;
+	}
+	&:nth-child(7) {
+		left: 1250px;
+	}
+	&:nth-child(8) {
+		left: 1500px;
+	}
+
 
 }
 .button_bynow {
