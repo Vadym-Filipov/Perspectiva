@@ -29,6 +29,8 @@ html, body{
 }
 
 .bin{
+	position: relative;
+	z-index: 20;
 	float:right;
 	width: 215px;
 	border: 1px $gray-light solid;
@@ -48,6 +50,7 @@ html, body{
 		appearance:none;
 	}
 	.customer_check{
+		cursor: pointer;
 		height: 30px;
 		line-height: 30px;
 		text-align: right;
@@ -61,6 +64,34 @@ html, body{
 			display: inline;
 			border-left: 1px $gray-light solid;
 			padding-left: 5px; 
+		}
+	}
+	.place_order {
+		cursor: pointer;
+		width: 100%;
+		background-color: white;
+
+		border-top: 1px $gray-light solid;
+		text-align: center;
+		height: auto;
+		display: none;
+		p {
+			margin: 0;
+			cursor: auto;
+			font-size: 10pt;
+			&:first-child {
+				font-size: 14pt;
+				cursor: pointer;
+			}
+			span {
+				cursor: pointer;
+
+			}
+			&:nth-child(2n) {
+				background-color: $gray-light;
+				color: white;
+			}
+
 		}
 	}
 }
@@ -418,8 +449,10 @@ input#follow-mail {
 
 }
 .button_bynow {
-	position: absolute;
+	position: relative;
 	z-index: 1;
+	left: 0;
+	top: 100px;
 	height: 120px;
 	width: 120px;
 	line-height: 150px;
@@ -496,7 +529,7 @@ input#follow-mail {
 			border-radius: 50%;
 			border: #dbebec 2px solid;
 			margin-left: 4px;
-			bottom: 86%;
+			bottom: 114px;
 		}
 		p {
 			text-align: center;

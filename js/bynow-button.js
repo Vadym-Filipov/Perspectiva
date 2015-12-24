@@ -5,11 +5,11 @@
     for (var i = 1; i < images.length-1; i++) {
         images[i].onmouseover = function () {
 
-            origX = event.target.offsetLeft;
-            origY = event.target.offsetTop;
+            origX = event.target.x;
+            //origY = event.target.y;
             knopkabynow.style.display = 'block';
-            knopkabynow.style.left = origX + 50 + 'px';
-            knopkabynow.style.top = origY + 75 +'px';
+            knopkabynow.style.left = origX - 140 + 'px';
+           // knopkabynow.style.top = origY + 75 +'px';
 
         };
 
