@@ -75,16 +75,24 @@ html, body{
 		text-align: center;
 		height: auto;
 		display: none;
-		p {
+		.place_button {
+			font-size: 12pt;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			color: $gray-light;
+		}
+		.order_position {
+			padding-left: 5px;
+			text-align: left;
+			width: 213px;
+			float: left;
 			margin: 0;
 			cursor: auto;
 			font-size: 10pt;
-			&:first-child {
-				font-size: 14pt;
+			.remove_order-position {
 				cursor: pointer;
-			}
-			span {
-				cursor: pointer;
+				float: right;
+				padding-right: 5px;
 
 			}
 			&:nth-child(2n) {
@@ -94,6 +102,8 @@ html, body{
 
 		}
 	}
+
+
 }
 
 .wrapper-all{

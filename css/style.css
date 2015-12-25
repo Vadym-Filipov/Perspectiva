@@ -551,22 +551,30 @@ html, body {
   display: none;
 }
 
-.bin .place_order p {
+.bin .place_order .place_button {
+  font-size: 12pt;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #c2c2c2;
+}
+
+.bin .place_order .order_position {
+  padding-left: 5px;
+  text-align: left;
+  width: 213px;
+  float: left;
   margin: 0;
   cursor: auto;
   font-size: 10pt;
 }
 
-.bin .place_order p:first-child {
-  font-size: 14pt;
+.bin .place_order .order_position .remove_order-position {
   cursor: pointer;
+  float: right;
+  padding-right: 5px;
 }
 
-.bin .place_order p span {
-  cursor: pointer;
-}
-
-.bin .place_order p:nth-child(2n) {
+.bin .place_order .order_position:nth-child(2n) {
   background-color: #c2c2c2;
   color: white;
 }

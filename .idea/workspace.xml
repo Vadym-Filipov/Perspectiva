@@ -7,7 +7,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jade/index.jade" afterPath="$PROJECT_DIR$/jade/index.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/add-to-cart.js" afterPath="$PROJECT_DIR$/js/add-to-cart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bynow-button.js" afterPath="$PROJECT_DIR$/js/bynow-button.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/pages/_main.scss" afterPath="$PROJECT_DIR$/scss/pages/_main.scss" />
     </list>
     <ignored path="Perspectiva.iws" />
@@ -28,9 +27,9 @@
     <favorites_list name="Perspectiva" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6276722">
+    <splitter split-orientation="horizontal" split-proportion="0.6245421">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.5963303">
+        <splitter split-orientation="horizontal" split-proportion="0.7299413">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="bynow-button.js" pinned="false" current-in-tab="false">
@@ -46,8 +45,8 @@
               <file leaf-file-name="add-to-cart.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/js/add-to-cart.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.772067">
-                      <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+                    <state vertical-scroll-proportion="1.3106145">
+                      <caret line="69" column="98" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="98" />
                       <folding />
                     </state>
                   </provider>
@@ -60,8 +59,8 @@
               <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/jade/index.jade">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.30055866">
-                      <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+                    <state vertical-scroll-proportion="0.47119817">
+                      <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -76,8 +75,8 @@
           <file leaf-file-name="_main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/pages/_main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.807601">
-                  <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+                <state vertical-scroll-proportion="0.49643704">
+                  <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -86,11 +85,10 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.8461537">
-                  <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
                   <folding>
-                    <marker date="1450969604868" expanded="true" signature="7834:7865" placeholder="{...}" />
-                    <marker date="1450969604868" expanded="true" signature="8090:8093" placeholder="{...}" />
+                    <marker date="1451041934429" expanded="true" signature="8300:8303" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -142,8 +140,8 @@
         <option value="$PROJECT_DIR$/js/bynow-button.js" />
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/jade/index.jade" />
-        <option value="$PROJECT_DIR$/scss/pages/_main.scss" />
         <option value="$PROJECT_DIR$/js/add-to-cart.js" />
+        <option value="$PROJECT_DIR$/scss/pages/_main.scss" />
       </list>
     </option>
   </component>
@@ -184,6 +182,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -382,7 +381,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -842,35 +840,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <marker date="1450969604868" expanded="true" signature="7834:7865" placeholder="{...}" />
-            <marker date="1450969604868" expanded="true" signature="8090:8093" placeholder="{...}" />
+            <marker date="1451041934429" expanded="true" signature="8300:8303" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jade/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30055866">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/pages/_main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.807601">
-          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.47119817">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/add-to-cart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.772067">
-          <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+        <state vertical-scroll-proportion="1.3106145">
+          <caret line="69" column="98" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/pages/_main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49643704">
+          <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
           <folding />
         </state>
       </provider>
