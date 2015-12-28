@@ -1,6 +1,7 @@
 (function () {
 
     var addpos = document.getElementsByClassName('collection_descr-coast');
+    var msg = document.getElementsByClassName('thnx')[0];
     var count = 0;
     var maxCount = -1;
     var price = 0;
@@ -40,7 +41,7 @@
             $('.place_order').append('<p class="order_position"><span class="remove_order-position"> X</span></p>');
             $('.place_order>p:last-child').prepend(nameMas[l] + ' ' + priceMas[l]);
         }
-        //$( ".place_order>p>span" ).click(removePosition);
+        $( ".place_order>p>span" ).click(removePosition);
     }
 
     for (var i = 0; i<addpos.length; i++) {
@@ -69,7 +70,7 @@
             window.localStorage[name1] = elemName;
             $('.place_order').append('<p class="order_position"><span class="remove_order-position"> X</span></p>');
             //$('.place_order').append('<p></p>');
-            $('.place_order>p:last-child').prepend(elemName + " " + elemprice);
+            $('.place_order>p:last-child').prepend(elemName + " " + elemprice).find("span").click(removePosition);
             //$( ".place_order>p>span:last-child" ).click(removePosition);
         }
     }
@@ -83,6 +84,30 @@
 
     $( ".place_button" ).click(function() {
         $( ".place_order" ).toggle( "slow", function(){
+        });
+        //Data = JSON.stringify({
+        //    'key': 'aWUYcbDZlFfZ0r_-D-X20A', // Get from mandrillapp.com
+        //    'message': {
+        //        'from_email': 'melkore87@gmail.com',
+        //        'to': [{ 'email': "melkore87@gmail.com", 'type': 'to' }],
+        //        'autotext': 'true',
+        //        'subject': 'New order',
+        //        'html': '<table style=""><tr><td>input1</td></tr></table>'
+        //    }
+        //});
+        //
+        //$.ajax({
+        //    type: "POST",
+        //    url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+        //    data: Data
+        //});
+
+        window.localStorage.clear();
+        //location.reload(true)
+        msg.style.display = 'block';
+        $('.thnx>span').click(function() {
+            location.reload(true);
+            //msg.style.display = 'none';
         });
     });
     function removePosition (){

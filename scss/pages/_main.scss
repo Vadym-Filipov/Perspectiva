@@ -105,7 +105,34 @@ html, body{
 
 
 }
+.thnx {
+	position: fixed;
+	z-index: 15;
+	margin: 0 auto;
+	width: 300px;
+	height: 150px;
+	background-color: #fd926d;
+	top: 40%;
+	left: 40%;
+	display: none;
+	p {
+		font-size: 18pt;
+		text-align: center;
+		line-height: 50px;
+		width: 100%;
+		float: left;
+		color: #fff;
+	}
+	span {
+		color: #fff;
+		border-bottom: 2px solid #dd6b44;
+		cursor: pointer;
+		margin-top: 10px;
+		margin-right: 10px;
+		float: right;
+	}
 
+}
 .wrapper-all{
 	max-width: 1200px;
 	min-width: 970px;
@@ -412,7 +439,7 @@ input#follow-mail {
 	}
 }
 .content-clothes_collection {
-	height: 422px;
+	height: 432px;
 	position: relative;
 	background: #fd926d;
 	white-space: nowrap; 
@@ -425,6 +452,7 @@ input#follow-mail {
 	position: absolute;
 	margin: 0 15px;
 	width: 220px;
+	height: 370px;
 	background: $gray-lighest;
 	display: inline-block;
 	vertical-align: top;
@@ -461,8 +489,8 @@ input#follow-mail {
 .button_bynow {
 	position: relative;
 	z-index: 1;
-	left: 0;
-	top: 100px;
+	left: 55px;
+	top: -260px;
 	height: 120px;
 	width: 120px;
 	line-height: 150px;
