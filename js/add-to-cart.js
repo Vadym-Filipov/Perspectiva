@@ -3,7 +3,7 @@
     var addpos = document.getElementsByClassName('collection_descr-coast');
     var msg = document.getElementsByClassName('thnx')[0];
     var count = 0;
-    var maxCount = -1;
+    var maxCount = 0;
     var price = 0;
     var price1, name1;
     var priceMas = [];
@@ -17,7 +17,7 @@
     if (savedCount) {
         count = savedCount;
         price = savedPrice;
-        maxCount = savedMaxCount
+        maxCount = savedMaxCount;
         if (savedCount == 1) {
             setitems.innerHTML = savedCount + ' item';
         }
@@ -48,7 +48,9 @@
 
         addpos[i].nextSibling.onclick = function () {
             count++;
-            if (count > maxCount){maxCount=count;window.localStorage.maxCount = maxCount;}
+            maxCount++;
+            window.localStorage.maxCount = maxCount;
+            //if (count > maxCount){maxCount=count;window.localStorage.maxCount = maxCount;}
             if (count == 1) {setitems.innerHTML = count + ' item';}
                 else {setitems.innerHTML = count + ' items'}
             window.localStorage.count = count;
@@ -64,8 +66,8 @@
             //price.toFixed(2);
             setprice.innerHTML = '$ ' + price;
             window.localStorage.price = price;
-            price1 = 'price' + count;
-            name1 = 'name' + count;
+            price1 = 'price' + maxCount;
+            name1 = 'name' + maxCount;
             window.localStorage[price1] = elemprice;
             window.localStorage[name1] = elemName;
             $('.place_order').append('<p class="order_position"><span class="remove_order-position"> X</span></p>');
@@ -85,22 +87,42 @@
     $( ".place_button" ).click(function() {
         $( ".place_order" ).toggle( "slow", function(){
         });
-        //Data = JSON.stringify({
-        //    'key': 'aWUYcbDZlFfZ0r_-D-X20A', // Get from mandrillapp.com
-        //    'message': {
-        //        'from_email': 'melkore87@gmail.com',
-        //        'to': [{ 'email': "melkore87@gmail.com", 'type': 'to' }],
-        //        'autotext': 'true',
-        //        'subject': 'New order',
-        //        'html': '<table style=""><tr><td>input1</td></tr></table>'
-        //    }
-        //});
-        //
-        //$.ajax({
-        //    type: "POST",
-        //    url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-        //    data: Data
-        //});
+
+        var sendOrder = '<table style="border: 1px solid; border-collapse: collapse; width: 300px; margin-bottom: 30px; text-align: center; color: #b1b1b1;">';
+        for (var j = 1; j<=maxCount; j++) {
+            price1 = 'price' + j;
+            var tempPrice = window.localStorage[price1];
+            priceMas.push(tempPrice);
+        }
+
+        for (var k = 1; k<=maxCount; k++) {
+            name1 = 'name' + k;
+            var tempName = window.localStorage[name1];
+            nameMas.push(tempName);
+        }
+        for (var l = 0; l<maxCount; l++) {
+            if (nameMas[l] == undefined){continue;}
+            sendOrder += '<tr style="border: 1px solid;"><td style="border: 1px solid;">' + nameMas[l] + '</td><td>' + priceMas[l] + '</td></tr>';
+
+        }
+        sendOrder += '</table>';
+
+        Data = JSON.stringify({
+            'key': '9C9bfdBKtO9LWcM0qNViuA',
+            'message': {
+                'from_email': 'customer@mail.ua',
+                'to': [{ 'email': "melkore87@gmail.com", 'type': 'to' }],
+                'autotext': 'true',
+                'subject': 'New order',
+                'html': sendOrder
+            }
+        });
+
+        $.ajax({
+            type: "POST",
+            url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+            data: Data
+        });
 
         window.localStorage.clear();
         //location.reload(true)
@@ -113,6 +135,7 @@
     function removePosition (){
 
         $(this).parent().remove();
+        //maxCount = count;
         count--;
         if (count == 1) {setitems.innerHTML = count + ' item';}
         else {setitems.innerHTML = count + ' items'}
